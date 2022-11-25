@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="stylesheet" href="./tela1 .css">
+    <script src="./telas.js">
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <span>O</span>
+        <span>R</span>
+        <span>G</span>
+        <span>A</span>
+        <span>N</span>
+        <span>I</span>
+        <span>Z</span>
+        <span>A</span>
+        <span>D</span>
+        <span>O</span>
+        <span>R</span>
+        <span>.</span>
+        <span>M</span>
+        <span>E</span>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div id="login">
+        <h1>Login </h1>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form">
+                            <div class="form-group">
+                                <input type="text" id="username" name="username" class="form-control" autocomplete="off" placeholder="Digite o usuário">
+                                <label for="username" class="text-info">Username: </label><br>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" name="passord" class="form-control" autocomplete="off" placeholder="Digite a Senha" onclick="myFunction()">
+                                <label for="password" class="text-info">Password: </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="remember"><span> Remember Me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label> <br> <br>
+                                <input onclick="login()" type="button" name="Submit " value="Submit" class="btn btn-info btn-md">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <a href="tela2.html" class="btn btn-sucess btn-md mt-2">Criar conta</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

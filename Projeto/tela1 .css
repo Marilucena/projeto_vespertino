@@ -1,0 +1,129 @@
+body {
+    background-image: url('./imagem\ tela\ 2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(247, 4, 206, 0.9);
+    text-shadow: -0.08em 0.03em 0.12em rgb(255, 255, 255);
+    margin-top: 3em;
+}
+
+#header {
+    height: 140px;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    float: right;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 6vw;
+    font-weight: 800;
+    text-shadow: -0.08em 0.03em 0.12em rgb(155, 2, 2);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: anim 4s infinite;
+}
+
+div span:not(:first-child) {
+    margin-left: -0.16em;
+}
+
+#main:not(:first-child) {
+    margin-left: -0.23em;
+}
+
+@keyframes anim {
+    from {
+        width: 0;
+    }
+}
+
+p {
+    width: 100%;
+    height: 14px;
+}
+
+.form-group {
+    width: 450px;
+    position: relative;
+}
+
+.text-info {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #b3b3b3;
+    user-select: none;
+}
+
+.form-control {
+    padding: 0.8rem;
+    width: 87%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: #FFF;
+}
+
+.text-info::before {
+    content: '';
+    height: 5px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.form-control:focus {
+    border: 2px solid #ffffff;
+}
+
+.form-control:focus+.text-info {
+    top: -10px;
+    color: #000000;
+    font-size: 18px;
+    text-shadow: 1.5px 1px 2px rgba(151, 53, 53, 0.7);
+}
+
+.form-control::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.form-control:focus::placeholder {
+    opacity: 1;
+}
+
+.form-control:not(:placeholder-shown)+.text-info {
+    top: -10px;
+    color: #38f2ff;
+    font-size: 18;
+}
+
+#login .container #login-row #login-column #login-box {
+    margin-top: 20px;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 40px 0 40px 0;
+    background-color: rgba(247, 4, 206, 0.282);
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 70px;
+    margin-top: 60px;
+}
